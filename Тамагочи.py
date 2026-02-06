@@ -63,7 +63,11 @@ class Tamagochi:
         self.happiness_behav = max(0, self.happiness_behav - 5)
 
 
+
 class TamagochiVIS:
+    
+    
+    
     def __init__(self, root):
         self.root = root
         self.root.title("Tamagotchi VIS")
@@ -79,6 +83,8 @@ class TamagochiVIS:
         self.Reset()
         self.root.after(1000, self.game_tick)
 
+
+    
     def Bars(self):
         self.bars = {}
         frame = tk.Frame(self.root)
@@ -88,6 +94,8 @@ class TamagochiVIS:
         self._create_bar(frame, "Энергия", "energy_behav")
         self._create_bar(frame, "Счастье", "happiness_behav")
 
+
+    
     def Buttons(self):
         btn_frame = tk.Frame(self.root)
         btn_frame.pack(pady=10)
